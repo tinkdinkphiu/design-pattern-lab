@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj",
+      "projectUniqueName": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\strategy\\Ex2\\Ex2\\Ex2.csproj",
       "projectName": "Ex2",
-      "projectPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj",
+      "projectPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\strategy\\Ex2\\Ex2\\Ex2.csproj",
       "packagesPath": "C:\\Users\\ltphu\\.nuget\\packages\\",
-      "outputPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\obj\\",
+      "outputPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\strategy\\Ex2\\Ex2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ltphu\\AppData\\Roaming\\NuGet\\NuGet.Config",

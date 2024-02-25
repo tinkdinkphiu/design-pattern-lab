@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj": {}
+    "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\template-method\\Ex1\\Ex1\\Ex1.csproj": {}
   },
   "projects": {
-    "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj": {
+    "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\template-method\\Ex1\\Ex1\\Ex1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj",
-        "projectName": "Ex2",
-        "projectPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\Ex2.csproj",
+        "projectUniqueName": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\template-method\\Ex1\\Ex1\\Ex1.csproj",
+        "projectName": "Ex1",
+        "projectPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\template-method\\Ex1\\Ex1\\Ex1.csproj",
         "packagesPath": "C:\\Users\\ltphu\\.nuget\\packages\\",
-        "outputPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\52100572_Lab2\\Ex2\\Ex2\\obj\\",
+        "outputPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\template-method\\Ex1\\Ex1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ltphu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -53,9 +53,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
