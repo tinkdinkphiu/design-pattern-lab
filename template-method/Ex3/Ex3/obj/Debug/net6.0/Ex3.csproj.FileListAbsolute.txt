@@ -1,0 +1,15 @@
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\bin\Debug\net6.0\Ex3.exe
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\bin\Debug\net6.0\Ex3.deps.json
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\bin\Debug\net6.0\Ex3.runtimeconfig.json
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\bin\Debug\net6.0\Ex3.dll
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\bin\Debug\net6.0\Ex3.pdb
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.csproj.AssemblyReference.cache
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.AssemblyInfoInputs.cache
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.AssemblyInfo.cs
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.csproj.CoreCompileInputs.cache
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.dll
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\refint\Ex3.dll
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.pdb
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\Ex3.genruntimeconfig.cache
+D:\University\2023-2024Term2\DesignPattern\TH\template-method\Ex3\Ex3\obj\Debug\net6.0\ref\Ex3.dll
