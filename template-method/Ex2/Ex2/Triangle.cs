@@ -49,6 +49,10 @@ namespace Ex2
     {
         public override Point GetPoint1()
         {
+            if (pointA.X > pointB.X)
+            {
+                return new Point(pointB.X, pointA.Y);
+            }
             return pointA;
         }
 
@@ -66,6 +70,10 @@ namespace Ex2
     {
         public override Point GetPoint1()
         {
+            if (pointA.X > pointB.X)
+            {
+                return pointA;
+            }
             return new Point(pointA.X, pointB.Y);
         }
 
@@ -76,6 +84,10 @@ namespace Ex2
 
         public override Point GetPoint3()
         {
+            if (pointA.X > pointB.X)
+            {
+                return new Point(pointA.X, pointB.Y);
+            }
             return new Point(pointB.X, pointA.Y);
         }
     }
@@ -96,21 +108,28 @@ namespace Ex2
             return new Point(pointA.X, pointB.Y);
         }
     }
-    public class StandardTriangle : Triangle
+    public class EquilateralTriangle : Triangle
     {
+        private const float Angle = (float)(Math.PI / 3);
         public override Point GetPoint1()
         {
-            throw new NotImplementedException();
+            return pointA;
         }
 
         public override Point GetPoint2()
         {
-            throw new NotImplementedException();
+            float side = (float)Math.Sqrt(Math.Pow(pointB.X - pointA.X, 2) + Math.Pow(pointB.Y - pointA.Y, 2));
+            float x = pointA.X + side * (float)Math.Cos(Angle);
+            float y = pointA.Y + side * (float)Math.Sin(Angle);
+            return new Point((int)x, (int)y);
         }
 
         public override Point GetPoint3()
         {
-            throw new NotImplementedException();
+            float side = (float)Math.Sqrt(Math.Pow(pointB.X - pointA.X, 2) + Math.Pow(pointB.Y - pointA.Y, 2));
+            float x = pointA.X + side * (float)Math.Cos(Angle + Angle);
+            float y = pointA.Y + side * (float)Math.Sin(Angle + Angle);
+            return new Point((int)x, (int)y);
         }
     }
     public class TriangleSimpleFactory
@@ -120,7 +139,7 @@ namespace Ex2
             if (type == TriangleType.VT) return new LeftRTriangle();
             else if (type == TriangleType.VP) return new RightRTriangle();
             else if (type == TriangleType.C) return new IsoscelesTriangle();
-            else if (type == TriangleType.D) return new StandardTriangle();
+            else if (type == TriangleType.D) return new EquilateralTriangle();
             else return null;
         }
     }
