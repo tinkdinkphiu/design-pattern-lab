@@ -17,6 +17,10 @@ namespace Ex2
             {
                 if (tri.IsInside(e.Location))
                 {
+                    foreach (var tris in triangles)
+                    {
+                        tris.Color = Color.Black;
+                    }
                     tri.Color = Color.Red;
                     Invalidate();
                     return;
