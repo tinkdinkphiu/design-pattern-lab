@@ -15,3 +15,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ex3_Ex4
 build_property.ProjectDir = D:\University\2023-2024Term2\DesignPattern\TH\factory-method\Ex3_Ex4\Ex3_Ex4\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
