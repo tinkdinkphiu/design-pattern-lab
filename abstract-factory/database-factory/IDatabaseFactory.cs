@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace abstract_factory
+namespace database_factory
 {
     public interface IDatabaseFactory
     {

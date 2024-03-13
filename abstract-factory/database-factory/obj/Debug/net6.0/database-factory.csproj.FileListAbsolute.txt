@@ -1,0 +1,13 @@
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\bin\Debug\net6.0\database-factory.deps.json
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\bin\Debug\net6.0\database-factory.dll
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\bin\Debug\net6.0\database-factory.pdb
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.csproj.AssemblyReference.cache
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.GeneratedMSBuildEditorConfig.editorconfig
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.AssemblyInfoInputs.cache
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.AssemblyInfo.cs
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.csproj.CoreCompileInputs.cache
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.sourcelink.json
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.dll
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\refint\database-factory.dll
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\database-factory.pdb
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\database-factory\obj\Debug\net6.0\ref\database-factory.dll

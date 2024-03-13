@@ -5,14 +5,13 @@ namespace abstract_factory
     public partial class Form1 : Form
     {
         private StudentRepository _studentRepo;
-        string connectionString = @"Data Source=LAPTOP-U1R4N9B7;Initial Catalog=AbstractFactoryStudentDB;Integrated Security=True;TrustServerCertificate=true";
 
         public Form1()
         {
             InitializeComponent();
-            IDatabaseFactory dbFactory = new SqlServerDatabaseFactory(connectionString);
+            DatabaseService dbService = new DatabaseService();
 
-            _studentRepo = new StudentRepository(dbFactory);
+            _studentRepo = new StudentRepository(dbService.Factory);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,7 +22,7 @@ namespace abstract_factory
 
             foreach (Student student in students)
             {
-                dataGridView1.Rows.Add(student.MSSV, student.FullName, student.BirthDate?.ToString("dd-MM-yyyy"), student.StudentClass);
+                dataGridView1.Rows.Add(student.MSSV, student.FullName, student.BirthDate?.ToString("dd/MM/yyyy"), student.StudentClass);
             }
         }
 
@@ -36,9 +35,9 @@ namespace abstract_factory
             }
 
             DateTime birthDate;
-            if (!DateTime.TryParseExact(txt_BirthDate.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out birthDate))
+            if (!DateTime.TryParseExact(txt_BirthDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out birthDate))
             {
-                MessageBox.Show("Birth date invalid. Format dd-MM-yyyy");
+                MessageBox.Show("Birth date invalid. Format dd/MM/yyyy");
                 return;
             }
 
@@ -72,9 +71,7 @@ namespace abstract_factory
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
                 string mssv = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
                 try
                 {
@@ -107,7 +104,7 @@ namespace abstract_factory
                 {
                     MSSV = mssv,
                     FullName = fullname,
-                    BirthDate = DateTime.ParseExact(birthDate, "dd-MM-yyyy", CultureInfo.InvariantCulture),
+                    BirthDate = DateTime.ParseExact(birthDate, "dd/MM/yyyy", CultureInfo.InvariantCulture),
                     StudentClass = studentClass
                 };
 

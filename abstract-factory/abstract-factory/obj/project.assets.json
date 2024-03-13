@@ -757,6 +757,20 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "database-factory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.2.0",
+          "System.Data.OleDb": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/database-factory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/database-factory.dll": {}
+        }
       }
     }
   },
@@ -2133,12 +2147,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "database-factory/1.0.0": {
+      "type": "project",
+      "path": "../database-factory/database-factory.csproj",
+      "msbuildProject": "../database-factory/database-factory.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "Microsoft.Data.SqlClient >= 5.2.0",
-      "System.Data.OleDb >= 8.0.0"
+      "System.Data.OleDb >= 8.0.0",
+      "database-factory >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2167,7 +2187,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\abstract-factory\\database-factory\\database-factory.csproj": {
+              "projectPath": "D:\\University\\2023-2024Term2\\DesignPattern\\TH\\abstract-factory\\database-factory\\database-factory.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

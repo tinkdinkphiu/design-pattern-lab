@@ -1,61 +1,60 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
-using System.Data.SqlClient;
 using System.Threading.Tasks;
-using System.Data.Common;
-using Microsoft.Data.SqlClient;
 
-namespace abstract_factory
+namespace database_factory
 {
-    public class SqlServerDatabaseFactory : IDatabaseFactory
+    public class AccessDatabaseFactory : IDatabaseFactory
     {
         private string _connectionString;
 
-        public SqlServerDatabaseFactory(string connectionString)
+        public AccessDatabaseFactory(string connectionString)
         {
             _connectionString = connectionString;
         }
 
         public DbParameter CreateParameter(string name, object value)
         {
-            return new SqlParameter(name, value);
+            return new OleDbParameter(name, value);
         }
 
         public DbCommand CreateCommand()
         {
-            return new SqlCommand();
+            return new OleDbCommand();
         }
 
         public DbCommand CreateCommand(string cmdText)
         {
-            return new SqlCommand(cmdText);
+            return new OleDbCommand(cmdText);
         }
 
         public DbCommand CreateCommand(string cmdText, DbConnection cn)
         {
-            return new SqlCommand(cmdText, (SqlConnection)cn);
+            return new OleDbCommand(cmdText, (OleDbConnection)cn);
         }
 
         public DbConnection CreateConnection()
         {
-            return new SqlConnection(_connectionString);
+            return new OleDbConnection(_connectionString);
         }
 
         public DbConnection CreateConnection(string cnString)
         {
-            return new SqlConnection(cnString);
+            return new OleDbConnection(cnString);
         }
 
         public DbDataAdapter CreateDataAdapter()
         {
-            return new SqlDataAdapter();
+            return new OleDbDataAdapter();
         }
 
         public DbDataAdapter CreateDataAdapter(DbCommand selectCmd)
         {
-            return new SqlDataAdapter((SqlCommand)selectCmd);
+            return new OleDbDataAdapter((OleDbCommand)selectCmd);
         }
 
         public DbDataReader CreateDataReader(DbCommand dbCmd)

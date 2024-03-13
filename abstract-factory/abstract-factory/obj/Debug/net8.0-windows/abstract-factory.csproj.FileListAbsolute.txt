@@ -69,3 +69,5 @@ D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\
 D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\obj\Debug\net8.0-windows\abstract-factory.genruntimeconfig.cache
 D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\obj\Debug\net8.0-windows\ref\abstract-factory.dll
 D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\obj\Debug\net8.0-windows\abstract_factory.Edit.resources
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\bin\Debug\net8.0-windows\database-factory.dll
+D:\University\2023-2024Term2\DesignPattern\TH\abstract-factory\abstract-factory\bin\Debug\net8.0-windows\database-factory.pdb

@@ -25,7 +25,7 @@ namespace abstract_factory
 
             txt_EditMSSV.Text = student.MSSV;
             txt_EditFullname.Text = student.FullName;
-            txt_EditBirthDate.Text = student.BirthDate?.ToString("dd-MM-yyyy");
+            txt_EditBirthDate.Text = student.BirthDate?.ToString("dd/MM/yyyy");
             txt_EditStudentClass.Text = student.StudentClass;
         }
 
@@ -33,7 +33,7 @@ namespace abstract_factory
         {
             _student.MSSV = txt_EditMSSV.Text;
             _student.FullName = txt_EditFullname.Text;
-            _student.BirthDate = DateTime.ParseExact(txt_EditBirthDate.Text, "dd-MM-yyyy", CultureInfo.InvariantCulture);
+            _student.BirthDate = DateTime.ParseExact(txt_EditBirthDate.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             _student.StudentClass = txt_EditStudentClass.Text;
 
             _studentRepo.UpdateStudent(_student);
