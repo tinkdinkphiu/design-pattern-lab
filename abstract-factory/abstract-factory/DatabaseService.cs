@@ -31,6 +31,14 @@ namespace abstract_factory
             {
                 return new AccessDatabaseFactory(_connectionString);
             }
+            else if (_databaseType == "Sqlite")
+            {
+                return new SqliteDatabaseFactory(_connectionString);
+            }
+            else if (_databaseType == "MySql")
+            {
+                return new MySqlDatabaseFactory(_connectionString);
+            }
             else
             {
                 throw new Exception("Invalid database type");
